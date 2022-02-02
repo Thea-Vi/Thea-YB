@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <!-- Javascript alert -->
+            <!-- Start of Navbar -->
+            <nav id="cart">
+                <span class="logospan">
+                    <img src="/assets/leaf.png" alt="leaf-logo">
+                    <h1>EasyBay</h1>
+                </span>
+                <span class="search">
+                    <form action="">
+                        <label for=""></label>
+                    </form>
+                    <input type="text" name="search" id="" placeholder="Search for anything">
+                    <img src="/assets/search-dark.png" alt="search-button">
+                </span>
+                <h3>Sign In</h3>
+                <img src="/assets/cart-dark.png" alt="cart" button onclick="cartDisplay()">
+            </nav>
+            <div class="links">
+                <ul>
+                    <li><a class="link"href="#">Aeonium</a></li>
+                    <li><a class="link"href="#">Andormischus</a></li>
+                    <li><a class="link"href="#">Agave</a></li>
+                    <li><a class="link"href="#">Aloe</a></li>
+                    <li><a class="link"href="#">Anacampseros</a></li>
+                    <li><a class="link"href="#">Aristaloe</a></li>
+                    <li><a class="link"href="#">More...</a></li>
+                </ul>
+            </div>
+            <!-- End of Navbar -->
+
+            <!-- Start of main content -->
+            <div class="main-content">
+                <div class="head-message">
+                    <h1>Your Source for Serious Succulent Specialties</h1>
+                </div>
+                <div class="top-container">
+                    <div class="top-left">
+                        <p>Discover succ-<br>
+                        ulent varieties<br>
+                        one pot or rack<br> at a time!<br>
+                        <span>Discover <img src="/assets/arrow-light.png" alt="arrow"></span></p>
+                        <img class="succulent-left" src="/assets/succulents-1.jpg" alt="succulents" src="/assets/aloe-m.jpg" alt="aloe" onmouseover="this.src='/assets/succulents-2.jpg'" onmouseout="this.src='/assets/succulents-1.jpg'">
+                        <div class="top-right">
+                            <div class="soothing">
+                                <img class="succulent-right" src="/assets/aloe-m.jpg" alt="aloe"/>
+                                <span>
+                                    <p>Soothing aloe <img src="/assets/arrow-light.png" alt="arrow"></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-container">
+
+                <!-- Start of bottom container -->
+                <div class="bottom-photos">
+                                <!-- ALTERNATIVE HOVER JS  -->
+                    <img src="/assets/aeonium-s.jpg" alt="Aeonium" id="image" onmouseover="setNewImage()" onmouseout="setOldImage()">
+                    <img src="/assets/aloe-s.jpg" alt="aloe">
+                    <img src="/assets/cactus-s.jpg" alt="cactus">
+                    <img src="/assets/echeveria-s.jpg" alt="echeveria">
+                    <img src="/assets/sedum-s.jpg" alt="sedum">
+                    <img src="/assets/sempervivum-s.jpg" alt="sempervivum">
+                </div>
+            </div>
+                           <!-- JAVASCRIPT remove alert-->
+            <div class="cookie-display"  id="cookie-alert">
+                <div class="message-alert">
+                    <img src="/assets/alert-dark.png" alt="alert">
+                    <p>This site makes use of third-party cookies, by clicking "I accept" you agree to the<br>
+                    termn outlined in our <a class="cookie-link" href="#">cookie-policy</a></p>
+                </div>
+                <button onclick="remCookie()">I accept</button>
+                <!-- End of bottom container -->
+            </div>
+        </section>
+    </main>    
+    <script src="/script.js"></script>
+
+    <!-- End of main content -->
+</body>
+</html>
